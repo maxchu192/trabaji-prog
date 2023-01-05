@@ -1,0 +1,40 @@
+
+@media only screen and (max-width: 400px ) {
+    .menu {
+        display: block !important;
+        width: 100%;
+    }
+
+    nav {
+        width:50%;
+        height:100%;
+        left:-100%;
+        margin:0;
+        position: fixed;           
+    }
+
+    nav ul {
+        display: block;
+    }
+    nav ul li {
+        display:block;
+        float:block;
+    }
+    .menu a {
+        display:block;
+    }
+}
+
+ul {
+    list-style: none;
+    display: block;
+    justify-content: center;
+}
+
+li {
+    float: left;
+}
+
+.menu {
+    display: none;
+}
