@@ -12,74 +12,86 @@
     
 </head>
 <body>
-    <header>
-        <h1>Curriculum Vitae</h1>
-        
-    </header>
     
-    <main>
-        <img src="https://randomuser.me/api/portraits/men/0.jpg"> <!--imagen obtenida de la pagina ramdon user-->   
+    <h1>Curriculum Vitae</h1>
+    <nav id="tema">
+        <input type="button" id="temaclaro" value="c">
+        <input type="button" id="temaoscuro" value="o">
+    </nav>
+        
+    
+    
+    
+    <img src="https://randomuser.me/api/portraits/men/0.jpg"> <!--imagen obtenida de la pagina ramdon user-->   
 
-        <nav>
+    <nav>
             <a href="#linea1"><i class="fa-regular fa-user"></i>Informacion Personal</a><br>
             <a href="#linea2"><i class="fa-regular fa-building"></i>Experiencia</a><br>
             <a href="#linea3"><i class="fa-solid fa-hammer"></i>Habilidades</a><br>
         <!--iconos obtenidos de fontawesome.com-->
-        </nav>
+    </nav>
 
-        <div class="container-fluid">
-            <div id="linea1">
-                <h3>Informacion Personal</h3>
-                <p>
-                    Mi nombre es Marcos Rios, tengo 30 años de edad 
-                    y soy de la localidad de Avellaneda de la provincia de Buenos Aires.
-                </p>
-                <p>
-                    Datos de Contacto:
-                </p>
-                <ul>
-                    <li>Telefono Fijo: </li>
-                    <li>Telefono Movil: 1123893839</li>
-                    <li>E-mail: max.rios92@gmail.com</li>                    
-                </ul>
-            </div>
-            <div id="linea2">
-                <h3>Experiencia </h3>
-                <p>
-                    Tengo experiencia en diferentes ambitos laborales 
-                    asi como en varios puestos de trabajos.
-                </p>
-                <p>
-                    A continuacion paso a detallar varios puestos desempeñados:
-                </p>
-                <ul>
-                    <li>Vendedor</li>
-                    <li>Delivery</li>
-                    <li>Cajero</li>
-                    <li>Atencion a Clientes</li>
-                    <li>Vigilador</li>
-                    <li>Empleado de Deposito</li>
-                    <li>Empleado en Señalizacion Vial</li>
-                    <li></li>
-                </ul>
-            </div>
-            <div id="linea3">
-                <h3>Habilidades</h3>
-                <p>
-                    Dentro de mis habilidades se encuentra: 
-                    la proactividad para realizar tareas afines, 
-                    la adaptación a diferentes ambitos laborales y sociales, 
-                    la facilidad para aprender nuevos conocimientos y 
-                    la disposición para comprometerme con las obligaciones impuestas.
-                </p>
-            </div>
+    <div class="container-fluid"><!--utilice mi propia informacion para rellenar dichos espacios a continuacion-->
+        <div id="linea1">
+            <h3>Informacion Personal</h3>
+            <p>
+                Mi nombre es Marcos Rios, tengo 30 años de edad 
+                y soy de la localidad de Avellaneda de la provincia de Buenos Aires.
+            </p>
+            <p>
+                Datos de Contacto:
+            </p>
+            <ul>
+                <li>Telefono Fijo: </li>
+                <li>Telefono Movil: 1123893839</li>
+                <li>E-mail: max.rios92@gmail.com</li>                    
+            </ul>
         </div>
+        <div id="linea2">
+            <h3>Experiencia </h3>
+            <p>
+                Tengo experiencia en diferentes ambitos laborales 
+                asi como en varios puestos de trabajos.
+            </p>
+             <p>
+                A continuacion paso a detallar varios puestos desempeñados:
+            </p>
+            <ul>
+                <li>Vendedor</li>
+                <li>Delivery</li>
+                <li>Cajero</li>
+                <li>Atencion a Clientes</li>
+                <li>Vigilador</li>
+                <li>Empleado de Deposito</li>
+                <li>Empleado en Señalizacion Vial</li>
+                <li></li>
+            </ul>
+            </div>
+        <div id="linea3">
+            <h3>Habilidades</h3>
+            <p>
+                Dentro de mis habilidades se encuentra: 
+                la proactividad para realizar tareas afines, 
+                la adaptación a diferentes ambitos laborales y sociales, 
+                la facilidad para aprender nuevos conocimientos y 
+                la disposición para comprometerme con las obligaciones impuestas.
+            </p>
+        </div>
+    </div>
         
-    </main>
 
-    <footer>
-        <p>Autor Marcos Rios</p>
-    </footer>
+    <p>Autor Marcos Rios</p>
+    <form action="mailto:max.rios92@gmail.com" method="post" enctype="text/plain">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" placeholder="Ingrese su Nombre" required/><br>
+        <label for="e-mail">E-mail</label>
+        <input type="email"name="e-mail" placeholder="Ingrese su E-mail" required/><br>
+        <label for="mensaje">mensaje</label>
+        <input type="text" name="mensaje" placeholder="Ingrese su Mensaje" required/><br>
+        <input type="submit" value="Enviar"/>
+    </form>
+
+<script src="pruebas/funciones/funcionesdelproyecto.js"></script>
 
 </body>
 </html>

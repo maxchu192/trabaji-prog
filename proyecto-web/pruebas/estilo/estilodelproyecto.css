@@ -9,6 +9,14 @@
         width: 37%;
         height: 200px;
     }
+    h1 {
+        width: 90%;
+        height: 150px
+    }
+    #tema {
+        width: 10%;
+        height: 150px;
+    }
 }
 @media only screen and (min-width: 401px) {
     nav {
@@ -19,22 +27,29 @@
         width: 20%;
         height: 465px;
     }
+    h1 {
+        width: 90%;
+        height: 450px
+    }
+    #tema {
+        width: 10%;
+        height: 450px;
+    }
 }
 * {
     box-sizing: border-box;
     font-family: 'Courgette', cursive;
 }
 body {
-    background-color: lightblue;
+    background-color: #add8e6;
 }
 
-header {
-    width: 100%;
-    height: 15%;
-}
+
 h1 {
+    float: left;
     background-color: lightgray;
-    padding: 30px 5px 30px 5px;
+    margin: 0px;
+    padding: 5px;
     border: 5px solid black;
     font-weight: bold;
     font-size: 50px;
@@ -42,11 +57,14 @@ h1 {
     color: blue;
     text-align: center;   
 }
-
-main {
-    width: 100%;
-    height: 70%;
+#tema {
+    background-color: lightcyan;
+    float: right;
+    padding: 5px;
+    border: 5px solid black;
 }
+
+
 nav {
     background-color: lightseagreen;
     padding: 5px;
@@ -72,8 +90,3 @@ h3 {
     text-decoration: underline 2px solid black;
 }
 
-footer {
-    width: 100%;
-    height: 15%;
-    text-align: center;
-}
