@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proyecto cv marcos</title>
+    <link rel="icon" href="icono.ico" type="image/x-icon">
+    <link href="estilos1.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/de7d72c4f4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    
+
+</head>
+<body style="background-color: darkgreen !important; color: lightcyan;"><!--style reelevante de style predeterminado en bootstrap.css-->
+
+    <!-- Header -->
+    <div class="container-fluid row">
+        <div class="col-sm-4">
+            <img src="https://randomuser.me/api/portraits/men/0.jpg">
+        </div>
+        <div class="col-sm-8">
+            <h1>Titulo Principal</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-9">            
+                <item><a href="#item1">Informacion Personal</a></item>
+                <item><a href="#item2">Experiencia</a></item>
+                <item><a href="#item3">Habilidades</a></item>
+            </div>
+            <div class="col-sm-3">
+                <input type="button" id="temaclaro" value="c">
+                <input type="button" id="temaoscuro" value="o">
+            </div>
+        </div>        
+    </div>
+    <!-- Header -->
+
+    <!--main-->
+    <div class="container-fluid">
+        <div id="item1" class="col-sm-12">
+            <h3><i class="fa-regular fa-user"></i>Informacion Personal</h3>
+            <p>
+                Mi nombre es Marcos Rios, tengo 30 años de edad 
+                y soy de la localidad de Avellaneda de la provincia de Buenos Aires.
+            </p>
+            <p>
+                Datos de Contacto:
+            </p>
+            <ul>
+                <li>Telefono Fijo: </li>
+                <li>Telefono Movil: 1123893839</li>
+                <li>E-mail: max.rios92@gmail.com</li>                    
+            </ul>
+        </div>
+        <div id="item2" class="col-sm-12">
+            <h3><i class="fa-regular fa-building"></i>Experiencia </h3>
+            <p>
+                Tengo experiencia en diferentes ambitos laborales 
+                asi como en varios puestos de trabajos.
+            </p>
+             <p>
+                A continuacion paso a detallar varios puestos desempeñados:
+            </p>
+            <ul>
+                <li>Vendedor</li>
+                <li>Delivery</li>
+                <li>Cajero</li>
+                <li>Atencion a Clientes</li>
+                <li>Vigilador</li>
+                <li>Empleado de Deposito</li>
+                <li>Empleado en Señalizacion Vial</li>
+            </ul>
+        </div>
+        <div id="item3" class="col-sm-12">
+            <h3><i class="fa-solid fa-hammer"></i>Habilidades</h3>
+            <p>
+                Dentro de mis habilidades se encuentra: 
+                la proactividad para realizar tareas afines, 
+                la adaptación a diferentes ambitos laborales y sociales, 
+                la facilidad para aprender nuevos conocimientos y 
+                la disposición para comprometerme con las obligaciones impuestas.
+            </p>
+        </div>            
+    </div>
+    <!--main-->
+
+    <!--footer-->
+    <div class="container-fluid">
+        <div class="container">
+            <h3>Autor Marcos Rios</h3>
+            <form id="formulario" action="mailto:max.rios92@gmail.com" method="post" enctype="text/plain">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" placeholder="Ingrese su Nombre" required/><br>
+                <label for="e-mail">E-mail</label>
+                <input type="email"name="e-mail" placeholder="Ingrese su E-mail" required/><br>
+                <label for="mensaje">mensaje</label>
+                <input type="text" name="mensaje" placeholder="Ingrese su Mensaje" required/><br>
+                <input id="boton" type="submit" value="Enviar"/>
+            </form>
+        </div>
+        <div id="respuesta" class="container">
+            <p>¡Mensaje Enviado!</p>
+        </div>
+    </div>
+    <!--footer-->
+
+    <!--script-->
+    <script src="funciones1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <!--script-->
+</body>
+</html>
