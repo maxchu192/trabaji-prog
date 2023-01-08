@@ -1,7 +1,17 @@
 
+ul {
+    list-style: none;
+    display: block;
+    justify-content: center;
+}
+
+li {float: left;}
+
+.menu {display: none;}
+
 @media only screen and (max-width: 400px ) {
     .menu {
-        display: block !important;
+        display: block;
         width: 100%;
     }
 
@@ -13,28 +23,13 @@
         position: fixed;           
     }
 
-    nav ul {
-        display: block;
-    }
+    nav ul {display: block;}
+
     nav ul li {
         display:block;
         float:block;
     }
-    .menu a {
-        display:block;
-    }
+    
+    .menu a {display:block;}
 }
 
-ul {
-    list-style: none;
-    display: block;
-    justify-content: center;
-}
-
-li {
-    float: left;
-}
-
-.menu {
-    display: none;
-}
