@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae MARCOS</title>
+    <link rel="icon" href="icono.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo-proyecto.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/de7d72c4f4.js" crossorigin="anonymous"></script>
+    <!--fuente e iconos obtenidos de fonts.google.com y fontsawesome.com respectivamente-->
+
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Curriculum Vitae</h1>
+
+        <button id="temaclaro"><i id="icon" class="fa-solid fa-sun"></i></button>
+        <!--intento de cambio de estilo basico basado en idea de tema claro para el dia y tema oscuro para la noche-->
+        <button id="temaoscuro"><i id="icon" class="fa-solid fa-moon"></i></button>
+
+    </div>
+    
+    <div class="container">
+
+        <nav>
+            <ul id="links">
+                <li id="lilinks"><a href="#linea1"><i class="fa-regular fa-user"></i>Informacion Personal</a></li>
+                <li id="lilinks"><a href="#linea2"><i class="fa-regular fa-building"></i>Experiencia</a></li>
+                <li id="lilinks"><a href="#linea3"><i class="fa-solid fa-hammer"></i>Habilidades</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div id="imagen" class="container">
+
+        <img src="https://randomuser.me/api/portraits/men/0.jpg"> <!--imagen obtenida de randomuser-->
+
+    </div>
+
+    <div id="linea1" class="container"><!--informacion personal propia utilizada para el relleno-->
+        
+        <h2>Informacion Personal</h2>
+
+        <p>
+            Mi nombre es Marcos Rios, tengo 30 años de edad 
+            y soy de la localidad de Avellaneda de la provincia de Buenos Aires.
+        </p>
+
+        <p>
+            Datos de Contacto:
+        </p>
+
+        <ul>
+            <li>Telefono Fijo: 77126390</li>
+            <li>Telefono Movil: 1123893839</li>
+            <li>E-mail: max.rios92@gmail.com</li>                    
+        </ul>
+
+    </div>
+    
+    <div id="linea2" class="container">
+
+        <h2>Experiencia</h2>
+
+        <p>
+            Tengo experiencia en diferentes ambitos laborales 
+            asi como en varios puestos de trabajos.
+        </p>
+
+        <p>
+            A continuacion paso a detallar varios puestos desempeñados:
+        </p>
+
+        <ul>
+            <li>Vendedor</li>
+            <li>Delivery</li>
+            <li>Cajero</li>
+            <li>Atencion a Clientes</li>
+            <li>Vigilador</li>
+            <li>Empleado de Deposito</li>
+            <li>Empleado en Señalizacion Vial</li>
+        </ul>
+
+    </div>
+
+    <div id="linea3" class="container">
+
+        <h2>Habilidades</h2>
+
+        <p>
+            Dentro de mis habilidades se encuentra: 
+            la proactividad para realizar tareas afines, 
+            la adaptación a diferentes ambitos laborales y sociales, 
+            la facilidad para aprender nuevos conocimientos y 
+            la disposición para comprometerme con las obligaciones a cumplir.
+        </p>
+
+    </div>
+
+    <div class="container"><!--formulario de contacto con derivacion a envio de email con app externa-->
+
+        <h2>Autor Marcos Rios</h2>
+
+        <form id="formulario" action="mailto:max.rios92@gmail.com" method="post" enctype="text/plain">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" placeholder="Ingrese su Nombre" required/><br>
+            <label for="e-mail">E-mail</label>
+            <input type="email"name="e-mail" placeholder="Ingrese su E-mail" required/><br>
+            <label for="mensaje">mensaje</label>
+            <input type="text" name="mensaje" placeholder="Ingrese su Mensaje" required/><br>
+            <input id="boton" type="submit" value="Enviar"/>
+        </form>
+
+    </div>
+
+    <div id="respuesta" class="container">
+        
+        <p>¡Mensaje Enviado!</p>
+
+    </div>
+    
+<script src="funciones-proyecto.js"></script>
+
+</body>
+</html>

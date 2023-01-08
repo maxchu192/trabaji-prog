@@ -1,0 +1,98 @@
+
+/*intento de hacer a mano el archivo de css despues de entender
+que, con libreria alternativa bootstrap, vienen muchos estilos preprogramados
+a los cuales hay que ir modificando para poder implementar ciertos estilos propios
+(aprendido al intentar cambiar color de fondo para cambio de tema claro/oscuro)*/
+* {
+    box-sizing: border-box;
+    font-family: 'Courgette', cursive;
+}
+
+h1 {
+    width: 70%;
+    margin: 0%;
+    float: left;
+    text-align: center;
+    text-decoration: underline 5px black;  
+}
+
+button {
+    width: 15%;
+    height: 42px;
+    float: left;
+    padding: 0%;    
+}
+
+#links{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+#lilinks {
+    float: left;
+}
+
+div#imagen {
+    width: 20%;
+    float: left;
+}
+
+div#linea1 {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+}
+
+h2 {
+    margin: 16px 0px;
+    text-align: center;
+    text-decoration: underline 3px black;
+}
+
+p {
+    margin: 10px 0px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 400px) {
+    
+    h1 {
+        width: 80%;
+        height: 42px;
+        float: left;
+    }
+
+    button {
+        width: 10%;
+        height: 42px;
+        float: left;
+        padding: 0; 
+    }
+
+    nav {
+        width: 70%;
+        float: left;
+    }
+
+    #links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        width: auto;
+        height: 92px;
+        float: left;
+    }
+
+    div#linea1 {
+        display: block;
+        width: 100%;
+    }
+
+    div#linea2 {
+        display: block;
+        width: 100%;
+    }
+}
