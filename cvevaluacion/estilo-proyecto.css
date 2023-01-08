@@ -13,7 +13,8 @@ h1 {
     margin: 0%;
     float: left;
     text-align: center;
-    text-decoration: underline 5px black;  
+    text-decoration: underline 5px black;
+    text-shadow: 1px 1px 3px rgba(255,0,0,0.5);  /*obtenido de https://htmlcheatsheet.com/css/*/
 }
 
 button {
@@ -48,11 +49,16 @@ h2 {
     margin: 16px 0px;
     text-align: center;
     text-decoration: underline 3px black;
+    text-shadow: 1px 1px 3px rgba(0,255,0,0.5); /*obtenido de https://htmlcheatsheet.com/css/*/
 }
 
 p {
     margin: 10px 0px;
     text-align: center;
+}
+
+div#respuesta {
+    display: none;
 }
 
 @media only screen and (max-width: 400px) {
@@ -95,4 +101,10 @@ p {
         display: block;
         width: 100%;
     }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+    img {
+        opacity: 0.5;
+    } /*responsive para que la imagen no tape el texto*/
 }

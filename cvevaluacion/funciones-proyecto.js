@@ -13,7 +13,7 @@ document.getElementById('boton').onclick = function cambiar() {
     document.getElementById('respuesta').style.display='block';
 }
 
-/*intento de agregar menu desplegable y carrousel fallidos*/
+/*intento de agregar menu desplegable fallidos*/
 
 
 /*$(document).ready(main);
