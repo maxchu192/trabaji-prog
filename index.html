@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto-CV</title>
+    <link rel="icon" href="icono.ico" type="image/x-icon">
+    <link href="estilos3.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/de7d72c4f4.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
 </head>
 <body>
+
+    <header id="inicio">
+
+        <div id="menu">
+            <a href="#">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+
+        <h1>Curriculum Vitae</h1>
+
+        <button id="temaclaro"><i id="icon" class="fa-solid fa-sun"></i></button>
+        
+        <button id="temaoscuro"><i id="icon" class="fa-solid fa-moon"></i></button>
+
+    </header>
     
+    <nav>
+        <ul>
+            <li><a href="#inicio"><i class="fa-solid fa-house"></i>Inicio</a></li>
+            <li><a href="#texto1"><i class="fa-solid fa-user"></i>Informacion Personal</a></li>
+            <li><a href="#texto2"><i class="fa-solid fa-building"></i>Experiencia</a></li>
+            <li><a href="#texto3"><i class="fa-solid fa-hammer"></i>Habilidades</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <img src="https://randomuser.me/api/portraits/men/0.jpg"> <!--imagen obtenida de randomuser-->
+
+        <div id="texto1">
+            <h2>Informacion Personal</h2>
+            <p>Toda mi <strong>informacion Personal</strong></p>
+        </div>
+
+        <div id="texto2">
+            <h2>Experiencia</h2>
+            <p>Toda mi <strong>experiencia</strong> laboral</p>
+        </div>
+
+        <div id="texto3">
+            <h2>Habilidades</h2>
+            <p>Todas mis <strong>habilidades</strong></p>
+        </div>
+    </main>
+
+    <script src="funciones2.js"></script>
+
 </body>
 </html>
