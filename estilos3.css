@@ -44,9 +44,9 @@ ul {
 
 li {
     float: left;
-    margin: 5px;
+    margin: 0px;
     border: 1px solid black;
-    padding: 5px;
+    padding: 0px;
     background-color: lightgreen;
 }
 
@@ -72,4 +72,45 @@ div#texto2 {
 h2 {
     text-decoration: underline;
     background-color: rgba(139, 0, 0, 0.5)
+}
+
+@media only screen and (max-width: 400px) {
+
+    img {
+        width: 100%;
+        float: left;
+    }
+
+    div#texto1 {
+        width: 100%;
+        float: left;
+    }
+
+    h1 {
+        width: 70%;
+        float: left;
+    }
+
+    #menu {
+        display: block;
+        width: 10%;
+        float: left;
+        position: fixed;
+    }
+
+    #links {
+        width: 50%;
+        height: 100%;
+        left: -100%;
+        margin: 50px 0;
+        position: fixed;           
+    }
+
+    nav ul {display: block;}
+
+    nav ul li {
+        display: block;
+        float: block;
+    }
+
 }

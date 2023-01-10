@@ -1,7 +1,8 @@
+/* intento de copiar menu desplegable (https://tutorialesinformatica.com/programacion/menu-horizontal-html-css/)
 $(document).ready(main);
 var contador = 0;
 function main(){
-    $('.menu').click(function(){
+    $('#menu').click(function(){
         contador = (contador + 1)%2
         if(contador == 1){
             $('nav').animate({
@@ -15,8 +16,18 @@ function main(){
             });
         }
     });
-};
+}; */
 
+var contador = 0
+
+document.getElementById('menu').onclick = function contar() {
+    contador = (contador +1)%2;
+    if (contador == 1) {
+        document.getElementById('links').style.left = 0;
+    } else {
+        document.getElementById('links').style.left = '-100%';
+    }
+}
 
 document.getElementById('temaclaro').onclick = function claro() {
     document.body.style.backgroundColor = 'lightgreen';

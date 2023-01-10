@@ -9,18 +9,15 @@
     <link rel="icon" href="icono.ico" type="image/x-icon">
     <link href="estilos3.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/de7d72c4f4.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-
+    
 </head>
 <body>
 
     <header id="inicio">
 
-        <div id="menu">
-            <a href="#">
+        <button id="menu">
                 <i class="fa-solid fa-bars"></i>
-            </a>
-        </div>
+        </button>
 
         <h1>Curriculum Vitae</h1>
 
@@ -30,7 +27,7 @@
 
     </header>
     
-    <nav>
+    <nav id="links">
         <ul>
             <li><a href="#inicio"><i class="fa-solid fa-house"></i>Inicio</a></li>
             <li><a href="#texto1"><i class="fa-solid fa-user"></i>Informacion Personal</a></li>
@@ -62,7 +59,7 @@
 
     <footer>
 
-        <h3>Autor Marcos Rios</h3>
+        <h2>Autor <strong>Marcos Rios</strong></h2>
 
         <form id="formulario" action="mailto:max.rios92@gmail.com" method="post" enctype="text/plain">
             <label for="nombre">Nombre</label>
@@ -73,9 +70,8 @@
             <input type="text" name="mensaje" placeholder="Ingrese su Mensaje" required/><br>
             <input id="boton" type="submit" value="Enviar"/>
         </form>
-        
-    </footer>
 
+    </footer>
 
     <script src="funciones2.js"></script>
 
