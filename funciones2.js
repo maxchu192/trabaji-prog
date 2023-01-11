@@ -18,15 +18,12 @@ function main(){
     });
 }; */
 
-var contador = 0
-
 document.getElementById('menu').onclick = function contar() {
-    contador = (contador +1)%2;
-    if (contador == 1) {
-        document.getElementById('links').style.left = 0;
-    } else {
-        document.getElementById('links').style.left = '-100%';
-    }
+    document.getElementById('links').style.left = 0;
+}
+
+document.getElementById('links').onclick = function cerrar() {
+    document.getElementById('links').style.left = '-100%';
 }
 
 document.getElementById('temaclaro').onclick = function claro() {
