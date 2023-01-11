@@ -8,6 +8,13 @@ a los cuales hay que ir modificando para poder implementar ciertos estilos propi
     font-family: 'Courgette', cursive;
 }
 
+body {
+    background-color: lightgreen;
+    color: black;
+}
+
+button#menu {display: none;}
+
 h1 {
     width: 70%;
     margin: 0%;
@@ -24,14 +31,32 @@ button {
     padding: 0%;    
 }
 
-#links{
+nav {
+    width: 100%;
+    clear: both;
+    background-color: rgba(139, 0, 0, 0.5) ;
+    
+}
+
+ul#links {
     list-style: none;
     display: flex;
     justify-content: space-around;
+    margin: 0px;
+    padding: 0px;
 }
 
-#lilinks {
+ul#links li {
     float: left;
+    margin: 0px;
+    border: 1px solid black;
+    padding: 0px;
+    background-color: lightgreen;
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }
 
 div#imagen {
@@ -40,16 +65,20 @@ div#imagen {
 }
 
 div#linea1 {
-    display: flex;
     width: 80%;
-    flex-direction: column;
+    float: left;
+}
+
+div#linea2 {
+    width: 100%;
+    clear: both;
 }
 
 h2 {
-    margin: 16px 0px;
+    background-color: rgba(139, 0, 0, 0.5);
     text-align: center;
     text-decoration: underline 3px black;
-    text-shadow: 1px 1px 3px rgba(0,255,0,0.5); /*obtenido de https://htmlcheatsheet.com/css/*/
+    text-shadow: 1px 1px 3px rgba(251, 255, 0, 0.5); /*obtenido de https://htmlcheatsheet.com/css/*/
 }
 
 p {
@@ -62,10 +91,17 @@ div#respuesta {
 }
 
 @media only screen and (max-width: 400px) {
+
+    button#menu {
+        display: block;
+        width: 10%;
+        float: left;
+        position: fixed;
+    }
     
     h1 {
-        width: 80%;
-        height: 42px;
+        width: 70%;
+        margin-left: 32px;
         float: left;
     }
 
@@ -76,35 +112,31 @@ div#respuesta {
         padding: 0; 
     }
 
-    nav {
-        width: 70%;
+    nav#navlinks {
+        width: 50%;
+        height: 100%;
+        left: -100%;
+        margin: 50px 0;
+        position: fixed;
+    }
+
+    nav ul#links {display: block;}
+
+    nav ul#links li {
+        display: block;
+        float: block;
+    }
+
+    div#imagen {
+        width: 100%;
+        height: auto;
         float: left;
     }
 
-    #links {
-        display: flex;
-        flex-direction: column;
-    }
-
-    img {
-        width: auto;
-        height: 92px;
-        float: left;
-    }
+    main {clear: both;}
 
     div#linea1 {
-        display: block;
         width: 100%;
     }
 
-    div#linea2 {
-        display: block;
-        width: 100%;
-    }
-}
-
-@media only screen and (min-width: 401px) and (max-width: 600px) {
-    img {
-        opacity: 0.5;
-    } /*responsive para que la imagen no tape el texto*/
 }
