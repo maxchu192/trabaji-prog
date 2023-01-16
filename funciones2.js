@@ -39,3 +39,12 @@ document.getElementById('temaoscuro').onclick = function oscuro() {
 document.getElementById('boton').onclick = function cambiar() {
     document.getElementById('respuesta').style.display='block';
 }
+
+$.ajax({
+    url: 'https://randomuser.me/api/',
+    dataType: 'json',
+    success: function(data) {
+      console.log(data);
+      
+    }
+  });

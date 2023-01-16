@@ -131,6 +131,8 @@ div#respuesta {
         width: 100%;
         height: auto;
         float: left;
+        display: flex;
+        justify-content: center;
     }
 
     main {clear: both;}
